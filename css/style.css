@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.new {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  background: #eff4fd;
+}
+.new span {
+  color: orange;
+}
+
+.new nav {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: orange;
+}
+
+.harish {
+  margin-left: 8%;
+  margin-top: 15%;
+}
+
+.harish h1 {
+  font-size: 50px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+.harish span {
+  color: orange;
+}
+
+.harish p {
+  color: #555;
+  line-height: 22px;
+}
+
+.about {
+  background: #eff4fd;
+}
+.about span {
+  color: orange;
+}
+.about h2 {
+  margin-left: 8%;
+  font-size: 35px;
+  color: #212121;
+  margin-bottom: 6px;
+}
+.about .personal-info .info-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.about .personal-info .info-item {
+  margin-left: 8%;
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.about .personal-info .info-item span {
+  font-weight: 400;
+  color: var(--text-black-700);
+  display: inline-block;
+}
+
+.footer {
+  position: bottom;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: #eff4fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer p:nth-child(1) {
+  font-size: 15px;
+  color: #212121;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.social {
+  display: flex;
+}
+.social a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: #212121;
+  text-decoration: none;
+  font-size: 20px;
+}
+.social a:hover {
+  color: orange;
+}
+
+@media (max-width: 700px) {
+  .new {
+    font-size: 10px;
+  }
+  .harish h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 700px) {
+  .about h2 {
+    font-size: 28px;
+  }
+  .about .personal-info .info-item {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .footer p:nth-child(1) {
+    font-size: 12px;
+  }
+  .social a {
+    font-size: 14px;
+  }
+}
